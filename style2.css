@@ -99,15 +99,14 @@ a{
 .main-lift ul{
 	display: flex;
 	flex-wrap: wrap;
+	column-gap: 4px;
+	max-width: 100%;
 }
 .main-lift li{
 	max-width: 47%;
-	margin: 0px 4px;
 }
 .main-lift img{
-	/* display: block; */
 	max-width: 100%;
-    /* margin: 4px; */
 }
 .main-right{
 	margin:  0 auto;
@@ -322,6 +321,18 @@ a{
 	padding-top: 24px;
 	padding-bottom: 48px;
 }
+@media (max-width: 1296px){
+	
+	.main-lift ul{
+		flex-direction: column;
+    }
+    .main-lift li{
+	    max-width: 100%;
+    }
+    .main-lift img{
+	max-width: 100%;
+    }
+}
 @media (max-width: 756px) {
 	.b-0-12{
 		padding: 0px  12px;
@@ -335,15 +346,6 @@ a{
 	.main{
 		flex-direction: column;
 	}
-	.main-lift ul{
-		flex-direction: column;
-    }
-    .main-lift li{
-	    max-width: 100%;
-    }
-	.size li{
-	    width: 48%;
-    }
 	.try{
 		flex-direction: row-reverse;
 		width: 100%;
